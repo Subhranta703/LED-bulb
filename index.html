@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>LED BULB</header>
+    <div id="bulb-container">
+        <div id="bulb">
+            <div id="bulb-top"></div>
+            <div id="bulb-bottom"></div>
+            <div id="filament"></div>
+            <div class="reflection"></div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="onButton">ON</button>
+        <button id="offButton" style="display:none;">OFF</button>
+    </div>
+    <div class="brightness-container">
+        <label for="brightness">Brightness:</label>
+        <input type="range" id="brightness" min="0" max="100" value="50">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; 
+    color: #fff; 
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#bulb-container {
+    text-align: center;
+}
+
+#bulb {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: #eee;
+    border-radius: 50% 50% 60% 60%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#bulb-top,
+#bulb-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50% 50% 0 0;
+}
+
+#bulb-top {
+    top: 0;
+}
+
+#bulb-bottom {
+    bottom: 0;
+}
+
+#filament {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 200px;
+    background-color: #ffcc00;
+    border-radius: 5px;
+}
+
+.reflection {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 15px;
+    background: radial-gradient(circle at 10px 5px, transparent, #fff 70%);
+    border-radius: 50%;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.brightness-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 8px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    #bulb {
+        width: 60%;
+    }
+}
